@@ -51,3 +51,25 @@
         transform: rotate(360deg);
     }
 }
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.counter {
+    display: flex;
+    gap: 20px;
+}
+
+.counter p {
+    margin: 0;
+}
+
+.counter-icon {
+    width: 40px;
+    height: 40px;
+}

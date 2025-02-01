@@ -58,10 +58,21 @@ function App() {
                                         </div>
                                     </div>
                                 </div>
-                                <p>Legendary Count: {legendaryCount}</p>
-                                <p>Enchanted Count: {enchantedCount}</p>
+                                <div className={"counter-container"}>
+                                    <div className={"counter"}>
+                                        <p>Legendary Count: {legendaryCount}</p>
+                                        <img className={"counter-icon"}
+                                             src={"https://cdn.discordapp.com/emojis/1273027164035612672.webp?size=96"}/>
+                                    </div>
+                                    <div className={"counter"}>
+                                        <p>Enchanted Count: {enchantedCount}</p>
+                                        <img className={"counter-icon"}
+                                             src={"https://cdn.discordapp.com/emojis/1273026356971700335.webp?size=96"}/>
+                                    </div>
+                                </div>
                                 <div>
-                                    <div className={"button"} onClick={() => resetBreak()}>Reset Break</div>
+                                    <div className={"button"} onClick={() => resetBreak()}>Reset Break
+                                    </div>
                                     <div className={"button"} onClick={() => resetCounter()}>End Break</div>
                                 </div>
                             </div>
@@ -70,7 +81,8 @@ function App() {
                 </div>
             </header>
         </div>
-    );
+    )
+        ;
 }
 
 export default App;
